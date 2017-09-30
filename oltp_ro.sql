@@ -1,22 +1,22 @@
 \set table_size 10000000
 \set range_size 100
-\set id1 random(1, :table_size)
-\set id2 random(1, :table_size)
-\set id3 random(1, :table_size)
-\set id4 random(1, :table_size)
-\set id5 random(1, :table_size)
-\set id6 random(1, :table_size)
-\set id7 random(1, :table_size)
-\set id8 random(1, :table_size)
-\set id9 random(1, :table_size)
-\set id10 random(1, :table_size)
-\set r1l random(1, :table_size)
+\set id1 trunc(random() * :table_size - 1)
+\set id2 trunc(random() * :table_size - 1)
+\set id3 trunc(random() * :table_size - 1)
+\set id4 trunc(random() * :table_size - 1)
+\set id5 trunc(random() * :table_size - 1)
+\set id6 trunc(random() * :table_size - 1)
+\set id7 trunc(random() * :table_size - 1)
+\set id8 trunc(random() * :table_size - 1)
+\set id9 trunc(random() * :table_size - 1)
+\set id10 trunc(random() * :table_size - 1)
+\set r1l trunc(random() * :table_size - 1)
 \set r1u :r1l + :range_size
-\set r2l random(1, :table_size)
+\set r2l trunc(random() * :table_size - 1)
 \set r2u :r2l + :range_size
-\set r3l random(1, :table_size)
+\set r3l trunc(random() * :table_size - 1)
 \set r3u :r3l + :range_size
-\set r4l random(1, :table_size)
+\set r4l trunc(random() * :table_size - 1)
 \set r4u :r4l + :range_size
 SELECT c FROM sbtest WHERE id = :id1;
 SELECT c FROM sbtest WHERE id = :id2;
