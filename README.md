@@ -17,6 +17,6 @@ $ psql pgtest -f oltp_init.sql
 
 $ pgbench -i pgtest
 
-$ pgbench -c 100 -j 100 -M prepared -f only_read.sql -T 300 -P 1 pgtest
+$ time pgbench -t 1000000 -f only_read.sql
 
-$ pgbench -c 100 -j 100 -M prepared -f write_read.sql -T 300 -P 1 pgtest
+$ time pgbench -t 1000000 -f write_read.sql
