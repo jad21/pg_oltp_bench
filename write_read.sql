@@ -10,18 +10,18 @@
 \setrandom id8 1 :table_size
 \setrandom id9 1 :table_size
 \setrandom id10 1 :table_size
-\setrandom r1l 1, :table_size
+\setrandom r1l 1 :table_size
 \set r1u :r1l + :range_size
-\setrandom r2l 1, :table_size
+\setrandom r2l 1 :table_size
 \set r2u :r2l + :range_size
-\setrandom r3l 1, :table_size
+\setrandom r3l 1 :table_size
 \set r3u :r3l + :range_size
-\setrandom r4l 1, :table_size
+\setrandom r4l 1 :table_size
 \set r4u :r4l + :range_size
-\setrandom u1 1, :table_size
-\setrandom u2 1, :table_size
-\setrandom u3 1, :table_size
-\setrandom u4 1, :table_size
+\setrandom u1 1 :table_size
+\setrandom u2 1 :table_size
+\setrandom u3 1 :table_size
+\setrandom u4 1 :table_size
 
 BEGIN;
 SELECT c FROM sbtest WHERE id = :id1;
